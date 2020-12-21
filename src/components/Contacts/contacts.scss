@@ -1,0 +1,51 @@
+.contacts {
+  &__wrapper {
+    padding: 20px 0 0 0;
+  }
+  &__content {
+    margin-top: 20px;
+  }
+  &__address {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  &__tel {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  &__email {
+    font-size: 22px;
+    margin-top: 10px;
+    a {
+      font-size: 22px;
+      color: chocolate;
+    }
+  }
+  &__tel {
+    font-size: 22px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    .telWrapper {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+      .img {
+        width: 30px;
+        margin-left: 10px;
+      }
+    }
+    a {
+      color: chocolate;
+    }
+  }
+  &__small {
+    color: grey;
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  &__card {
+    margin-top: 20px;
+  }
+}

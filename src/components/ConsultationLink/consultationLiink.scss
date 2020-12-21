@@ -1,0 +1,14 @@
+.link {
+  background-color: #ff3a00;
+  color: #fff;
+  display: block;
+  padding: 15px 0;
+  font-size: 20px;
+  transition: all 0.3s linear;
+  text-align: center;
+  margin-top: 15px;
+  width: 350px;
+  &:hover {
+    background-color: #ff7800;
+  }
+}

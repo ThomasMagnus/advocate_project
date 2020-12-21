@@ -1,0 +1,9 @@
+.header__top {
+    background-color: #f5f2ec;
+    padding: 10px 0;
+}
+
+.header__top-text {
+    text-align: center;
+    font-size: 16px;
+}

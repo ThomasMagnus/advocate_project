@@ -1,0 +1,37 @@
+.header {
+  &__center {
+    background: linear-gradient(90deg, rgba(71,0,0,1) 38%, rgba(0,0,0,1) 100%, rgba(14,0,143,1) 100%);
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__logo {
+    width: 250px;
+  }
+  &__main {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 30px;
+  }
+  &__subtitle {
+    font-size: 25px;
+  }
+  &__tel {
+    color: #e2ce6e;
+    font-size: 25px;
+  }
+  &__text {
+    font-size: 25px;
+  }
+}

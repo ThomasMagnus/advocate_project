@@ -1,0 +1,17 @@
+.consultation {
+  padding: 20px 0;
+  &__desc {
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    color: #4b4844;
+    line-height: 1.5em;
+    font-size: 20px;
+    flex: 1 0 50%;
+    margin-top: 20px;
+  }
+  &__img {
+    width: 215px;
+  }
+}
