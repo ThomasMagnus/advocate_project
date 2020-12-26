@@ -12,10 +12,12 @@ import FooterContent from "./components/Footer/FooterContent/FooterContent";
 import {Route} from "react-router-dom";
 import MyServices from "./components/MyServices/MyServices";
 import Contacts from "./components/Contacts/Contacts";
+import ConsultationForm from "./components/ConsultationForm/ConsultationForm";
 
 export const MenuContext = React.createContext(false);
 
 class App extends Component{
+    // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props);
     }
@@ -25,18 +27,22 @@ class App extends Component{
             {
                 title: 'Главная',
                 link: '/',
+                active: true
             },
             {
                 title: 'Услуги',
                 link: '/services',
+                active: false
             },
             {
                 title: 'Обо мне',
                 link: '/aboutMe',
+                active: false
             },
             {
                 title: 'Контакты',
                 link: '/contacts',
+                active: false
             },
 
         ],
@@ -97,6 +103,7 @@ class App extends Component{
                           <Services services={this.state.services} services2={this.state.services2}/>
                           <Consultation/>
                       </Route>
+                      <Route path='/consultation' component={ConsultationForm}/>
                   </Main>
               <Footer>
                   <MenuContext.Provider value={this.state.menu}>

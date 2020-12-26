@@ -17,4 +17,10 @@
       }
     }
   }
+  .active {
+    background-color: #f93600;
+  }
+  .active > a {
+    color: #fff;
+  }
 }

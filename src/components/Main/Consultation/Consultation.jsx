@@ -1,5 +1,6 @@
 import React from "react";
 import './consultation.scss'
+import ConsultationLink from "../../ConsultationLink/ConsultationLink";
 
 const Consultation = () => {
     return (
@@ -16,6 +17,7 @@ const Consultation = () => {
                         <img src="./img/podrobnee-o-termine-advokat.jpg" alt="консультация"/>
                     </div>
                 </div>
+                <ConsultationLink/>
             </div>
         </section>
     )
