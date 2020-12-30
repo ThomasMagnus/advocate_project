@@ -13,6 +13,7 @@ import {Route} from "react-router-dom";
 import MyServices from "./components/MyServices/MyServices";
 import Contacts from "./components/Contacts/Contacts";
 import ConsultationForm from "./components/ConsultationForm/ConsultationForm";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 export const MenuContext = React.createContext(false);
 
@@ -104,6 +105,7 @@ class App extends Component{
                           <Consultation/>
                       </Route>
                       <Route path='/consultation' component={ConsultationForm}/>
+                      <Route path='/aboutMe' component={AboutMe}/>
                   </Main>
               <Footer>
                   <MenuContext.Provider value={this.state.menu}>

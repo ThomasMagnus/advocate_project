@@ -1,10 +1,25 @@
 import React from 'react'
 import './consultationForm.scss'
+import postData from "../../servicesFiles/postData";
+// import '../../mailer/smart.php'
 
 class ConsultationForm extends React.Component {
     // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+        this.form = document.querySelector('.consultationForm__form')
+    }
+
+    postUsersComment = (e) => {
+        e.preventDefault()
+        postData('../../mailer/smart.php', this.form)
+            .then(response => {
+                console.log(response)
+                this.form.reset()
+            })
     }
 
     render() {
@@ -30,7 +45,7 @@ class ConsultationForm extends React.Component {
                                 Ваш вопрос:
                                 <textarea name="comment" className='consultationForm__textarea'/>
                             </label>
-                            <button type="submit" className='consultationForm__btn'>Отправить</button>
+                            <button type="submit" className='consultationForm__btn' onClick={this.postUsersComment}>Отправить</button>
                         </form>
                     </div>
                 </div>
